@@ -1,104 +1,224 @@
+
 <html>
-<style>
-* {
-  box-sizing: border-box;
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCGjySNdQS9bmq0_F1Q-465jAMB7FetH0U",
+    authDomain: "team-dot.firebaseapp.com",
+    databaseURL: "https://team-dot.firebaseio.com",
+    projectId: "team-dot",
+    storageBucket: "team-dot.appspot.com",
+    messagingSenderId: "1045202600109"
+  };
+  firebase.initializeApp(config);
+</script>
+    <style>
+        html{
+           scroll-behavior: smooth;
+         overflow-x: hidden;
+            
+        }
+              /* width */
+::-webkit-scrollbar {
+  width:3px;
 }
 
-body {
-  margin: 0;
-  font-family: Arial;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff; 
 }
 
-.header {
-  text-align: center;
-  padding: 32px;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000; 
 }
 
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000; 
+}
+        
+        #container{
+            height: 100%;
+            width: 100%;
+        }
+       
+        #bloglist{
+            position: absolute;
+            top: 90%;
+            left: 0%;
+            background:black;
+            width:100%;
+            height:100%;
+            z-index: 500;
+            border-top-left-radius: 50%;
+              border-top-right-radius: 50%;
+          transition:2s cubic-bezier(.17,.67,.83,.67);
+        
+        }
+        #ib{
+          
+        }
+        #cosmos{
+           height: 900px;
+
+            width: auto;
+            
+        }
+          #explore{
+            color:white;
+            height: 200px;
+            
+           font-family:fantasy;
+            font-weight: 100;
+            font-size: 55px;
+            position: fixed;
+            top:75%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            letter-spacing: 5px;
+            transition-duration: 0.5s;
+              border-style: solid;
+            border-width:1px;
+            border-color: black;
+            border-radius: 100%;
+            text-align: center;
+            transform: translate(-50%,-50%);
+           -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 5s; /* Firefox < 16 */
+        -ms-animation: fadein 5s; /* Internet Explorer */
+         -o-animation: fadein 5s; /* Opera < 12.1 */
+            animation: fadein 5s;
+        }
+    @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
-</style>
+        .scroll-downs {
+  position: absolute;
+  top: 2%;
+ 
+  left: 48%;
+  margin: auto;
+  display:block;
+  width :34px;
+  height: 55px;
+            z-index: 60;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+        .container{
+            position: fixed;
+        }   
+        
+    </style>
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="sky.css"> 
+    
+   
+           <a href="javascript:document.getElementById('abouts').scrollIntoView(true);"> <div id="explore">Cosmic Parties</div></a>
+  
+<div id="bloglist"> <!--scroll icon-->
+    <div> <div class="scroll-downs">
+  <div class="mousey">
+    <div class="scroller"></div>
+      </div>
+</div> 
+       </div>
+    </div>
+<div class="container">
+    
+    
+		<div id="scene" class="scene">
+      
+ 
+            
+            <div data-depth="0.20" id="ib"><img id="cosmos" src="NicePng_nazi-hat-png_1128274.png"></div>
+            
+			<div data-depth="0.50" id="stars"></div>
+            
+            
+			<div data-depth="0.70" id="star2"></div>
+            
+           <div data-depth="1.00"  id="stars3">
+            </div>
+            
+		</div>
+	</div>
+
+                
+	
+
+   
+ 
+</head>
 <body>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+  <embed src="soundbits_Dark_SciFi_Drone_Mixed_044.mp3" loop="true" autoplay="true" width="0"/>    
+	<!-- Scripts -->
+	<script src="js/parallax.js"></script>
+	<script>
 
-<!-- Header -->
-<div class="header">
-  <h1>Responsive Image Grid</h1>
-  <p>Resize the browser window to see the responsive effect.</p>
-</div>
+	// Pretty simple huh?
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
 
-<!-- Photo Grid -->
-<div class="row"> 
-  <div class="column">
-    <img src="https://drive.google.com/uc?export=view&id=0B4HpG1JzG_KyaFpjVGZjVFA0aFE" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/falls2.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
-    <img src="/w3images/nature.jpg" style="width:100%">
-    <img src="/w3images/mist.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="/w3images/underwater.jpg" style="width:100%">
-    <img src="/w3images/ocean.jpg" style="width:100%">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/mountainskies.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/underwater.jpg" style="width:100%">
-  </div>  
-  <div class="column">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/falls2.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
-    <img src="/w3images/nature.jpg" style="width:100%">
-    <img src="/w3images/mist.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="/w3images/underwater.jpg" style="width:100%">
-    <img src="/w3images/ocean.jpg" style="width:100%">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/mountainskies.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/underwater.jpg" style="width:100%">
-  </div>
-</div>
+	</script>
+    <script>
+          $(window).scroll(function(){
+    $(".scroll-downs").css("opacity", 1 - $(window).scrollTop() / 150);
+  });
+         
+    </script>
 
 </body>
 </html>
