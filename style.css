@@ -45,7 +45,7 @@ canvas {
 
     height: 100%;
     width: 100%;
-    background: yellow;
+    background: blue;
 }
 @media only screen and (max-width:1024px) {
   /* For tablets:*/
