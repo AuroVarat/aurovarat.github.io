@@ -54,8 +54,11 @@ canvas {
     padding: 0;
   
   }
+     #middle{
+        transform: scale(500%,500%);
+    }
  .glitch{
-    font-size: 280%;
+    font-size: 580%;
   }
 }
 @media only screen and (max-width:500px) {
@@ -65,8 +68,11 @@ canvas {
     padding: 0;
   
   }
+    #middle{
+        transform: scale(500%,500%);
+    }
  .glitch{
-    font-size: 280%;
+    font-size: 580%;
   }
 }
 
