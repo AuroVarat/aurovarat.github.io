@@ -57,9 +57,16 @@ canvas {
      #middle{
         transform: scale(500%,500%);
     }
- .glitch{
-    font-size: 1500%;
+    body h1{
+       font-size: 500%; 
+    }
+    
+  .glitch{
+  font-size: 500%; 
   }
+    body h3{
+        font-size: 200%; 
+    }
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
@@ -71,9 +78,16 @@ canvas {
     #middle{
         transform: scale(500%,500%);
     }
- .glitch{
-    font-size: 1500%;
+    body h1{
+       font-size: 500%; 
+    }
+    
+  .glitch{
+  font-size: 500%; 
   }
+    body h3{
+        font-size: 200%; 
+    }
 }
 
 
