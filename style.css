@@ -60,12 +60,9 @@ canvas {
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
-  div{
-    width: 100%;
-  }
-     .glitch{
-    font-size: 280%;
-  }
+    #particle-js #middle{
+        transform:scale(250%, 250%);
+    }
 }
 
 
