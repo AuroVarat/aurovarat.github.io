@@ -47,7 +47,7 @@ canvas {
     width: 100%;
     background: yellow;
 }
-@media only screen and (max-width:40em) {
+@media only screen and (max-width:1024px) {
   /* For tablets:*/
   div {
     width: 80%;
@@ -60,7 +60,7 @@ canvas {
    
     
 }
-@media only screen and (max-width:10em) {
+@media only screen and (max-width:480px) {
   /* For mobile phones: */
      div {
     width: 80%;
