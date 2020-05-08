@@ -47,8 +47,8 @@ canvas {
     width: 100%;
     background: yellow;
 }
-@media only screen and (max-width:40em) {
-  /* For tablets: */
+/*@media only screen and (max-width:40em) {
+  /* For tablets:
   div {
     width: 80%;
     padding: 0;
@@ -69,7 +69,7 @@ canvas {
     }
 }
 @media only screen and (max-width:10em) {
-  /* For mobile phones: */
+  /* For mobile phones: 
      div {
     width: 80%;
     padding: 0;
@@ -91,7 +91,7 @@ canvas {
 }
 
 
-
+*/
 h1 {
     font-size: 36px;
     font-style: italic;
@@ -106,7 +106,7 @@ h2 {
     color: white;
     font-family:monospace;
     font-weight: 100;
-    font-size: 24px;
+    font-size: 3.25em;
     text-align: center;
     cursor: pointer;
       position:relative;
