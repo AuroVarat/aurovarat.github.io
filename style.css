@@ -49,26 +49,18 @@ canvas {
 }
 @media only screen and (max-width:1024px) {
   /* For tablets:*/
-  div {
-    width: 80%;
-    padding: 0;
   
-  }
     #middle{
-          font-size: 80%;
+          font-size: 75%;
     }
    
     
 }
 @media only screen and (max-width:480px) {
   /* For mobile phones: */
-     div {
-    width: 80%;
-    padding: 0;
-  
-  }
+     
         #middle{
-          font-size: 80%;
+          font-size: 75%;
     }
    
     
@@ -78,6 +70,11 @@ canvas {
 
 
 h1 {
+      position:relative;
+    top: 50%;
+    left: 50%;
+   
+    transform: translate(-50%, -50%);
     font-size: 3.25em;
     font-style: italic;
     color: white;
@@ -106,7 +103,7 @@ h2 {
 
 h3 {
     color: white;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.75em;
     font-family: sans-serif;
     text-align: center;
@@ -130,7 +127,7 @@ h3 {
     font-size: 1.25em;
     text-align: left;
     font-weight: 600;
-    margin-top: -10px;
+    margin-top: -2.75em;
 }
 
 .ptype {
