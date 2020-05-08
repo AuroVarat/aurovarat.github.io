@@ -49,7 +49,9 @@ canvas {
 }
 @media only screen and (max-width:1024px) {
   /* For tablets:*/
-  
+    h1{
+        font-size: 70%;
+    }
     #middle{
           font-size: 75%;
     }
@@ -58,7 +60,9 @@ canvas {
 }
 @media only screen and (max-width:480px) {
   /* For mobile phones: */
-     
+     h1{
+        font-size: 70%;
+    }
         #middle{
           font-size: 75%;
     }
