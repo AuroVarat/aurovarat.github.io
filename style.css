@@ -47,53 +47,29 @@ canvas {
     width: 100%;
     background: yellow;
 }
-/*@media only screen and (max-width:40em) {
-  /* For tablets:
+@media only screen and (max-width:40em) {
+  /* For tablets:*/
   div {
     width: 80%;
     padding: 0;
   
   }
-     #middle{
-        transform: scale(500%,500%);
-    }
-    body h1{
-       font-size: 500%; 
-    }
     
-  .glitch{
-  font-size: 500%; 
-  }
-    body h3{
-        font-size: 200%; 
-    }
 }
 @media only screen and (max-width:10em) {
-  /* For mobile phones: 
+  /* For mobile phones: */
      div {
     width: 80%;
     padding: 0;
   
   }
-    #middle{
-        transform: scale(500%,500%);
-    }
-    body h1{
-       font-size: 500%; 
-    }
-    
-  .glitch{
-  font-size: 500%; 
-  }
-    body h3{
-        font-size: 200%; 
-    }
+   
 }
 
 
-*/
+
 h1 {
-    font-size: 36px;
+    font-size: 4.25em;
     font-style: italic;
     color: white;
     font-family: sans-serif;
@@ -122,7 +98,7 @@ h2 {
 h3 {
     color: white;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 2.25em;
     font-family: sans-serif;
     text-align: center;
 }
@@ -142,7 +118,7 @@ h3 {
 
 #about {
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 2.25em;
     text-align: left;
     font-weight: 600;
     margin-top: -10px;
