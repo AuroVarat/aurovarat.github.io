@@ -45,7 +45,7 @@ canvas {
 
     height: 100%;
     width: 100%;
-    background: yellow;
+    background: blue;
 }
 @media only screen and (max-width:1024px) {
   /* For tablets:*/
@@ -55,7 +55,7 @@ canvas {
   
   }
     #middle{
-          font-size: 100%;
+          font-size: 80%;
     }
    
     
@@ -68,7 +68,7 @@ canvas {
   
   }
         #middle{
-          font-size: 100%;
+          font-size: 80%;
     }
    
     
