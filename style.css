@@ -58,7 +58,7 @@ canvas {
         transform: scale(500%,500%);
     }
  .glitch{
-    font-size: 580%;
+    font-size: 500%;
   }
 }
 @media only screen and (max-width:500px) {
@@ -72,7 +72,7 @@ canvas {
         transform: scale(500%,500%);
     }
  .glitch{
-    font-size: 580%;
+    font-size: 500%;
   }
 }
 
@@ -98,6 +98,7 @@ h2 {
       position:relative;
     top: 50%;
     left: 50%;
+    content: "3";
     transform: translate(-50%, -50%);
     
 }
