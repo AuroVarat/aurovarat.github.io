@@ -37,6 +37,7 @@ canvas {
      z-index: 100;
     transform: translate(-50%,-50%);
     
+    
 }
 
 #first {
@@ -48,27 +49,69 @@ canvas {
     background: white;
  
 }
-@media only screen and (max-width:1024px) {
-  /* For tablets:*/
-   
-    #middle{
-        width: 70%;
-          font-size: 75%;
-    }
-   
-    
+
 }
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:600px) {
   /* For mobile phones: */
    
         #middle{
-            width: 70%;
-          font-size: 70%;
+          
+            width: 80%;
+          font-size: 75%;
+            
     }
     
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #middle{
+          
+            width: 80%;
+          font-size: 75%;
+            
+    }
+    }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #middle{
+        
+            width: 80%;
+          font-size: 75%;
+            
+    }
+    }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #middle{
+           
+            width: 80%;
+          font-size: 75%;
+            
+    }
+    }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #middle{
+          
+            width: 80%;
+          font-size: 75%;
+            
+    }
+    }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #middle{
+         
+            width: 80%;
+          font-size: 75%;
+            
+    }
+    }
 
 
 h1 {
@@ -150,4 +193,32 @@ h3 {
     line-height: 1.75em;
     font-family: monospace;
     
+}
+
+#second {
+      position: absolute;
+    top: 200%;
+
+    height: 100%;
+    width: 100%;
+ background-color: white;
+  font-family: Helvetica, sans-serif;
+    
+ 
+}
+
+dt {
+
+    font-size: 2.25em;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    
+}
+
+dd {
+  
+    font-size: 1.75em;
+    margin-top: 15px;
+    font-weight: 400;
+     font-family: 'Open Sans', sans-serif;
 }
