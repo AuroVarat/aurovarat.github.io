@@ -50,7 +50,9 @@ canvas {
 }
 @media only screen and (max-width:1024px) {
   /* For tablets:*/
-
+    div{
+        width: 80%;
+    }
     #middle{
           font-size: 75%;
     }
@@ -59,7 +61,9 @@ canvas {
 }
 @media only screen and (max-width:480px) {
   /* For mobile phones: */
-   
+    div{
+        width: 80%;
+    }
         #middle{
           font-size: 75%;
     }
@@ -80,6 +84,7 @@ h1 {
     color: white;
     font-family: sans-serif;
     font-weight: 100;
+    text-align: center;
 }
 
 
@@ -131,6 +136,7 @@ h3 {
     text-align: left;
     font-weight: 600;
     margin-top: -2.75em;
+     text-align: center;
 }
 
 .ptype {
