@@ -45,7 +45,8 @@ canvas {
 
     height: 100%;
     width: 100%;
-    background: blue;
+    background: white;
+ 
 }
 @media only screen and (max-width:1024px) {
   /* For tablets:*/
@@ -62,7 +63,6 @@ canvas {
         #middle{
           font-size: 75%;
     }
-   
     
 }
 
@@ -134,5 +134,16 @@ h3 {
 }
 
 .ptype {
+    
+}
+
+#title {
+    color: black;
+}
+
+#info {
+    font-size: 2.25em;
+    line-height: 1.75em;
+    font-family: monospace;
     
 }
