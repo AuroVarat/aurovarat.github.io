@@ -54,62 +54,87 @@ canvas {
 @media only screen and (max-width:400px) {
   /* For mobile phones: */
    
-        #middle{
-          
+        #middletwo{
+          height: 90%;
             width: 80%;
           font-size: 75%;
             
     }
-    
+    #middle{
+         width: 80%;
+          font-size: 75%;
+    }
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    #middle{
-          
+    #middletwo{
+           height: 90%;
             width: 80%;
           font-size: 75%;
             
+    }
+     #middle{
+         width: 80%;
+          font-size: 75%;
     }
     }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    #middle{
+    #middletwo{
+         height: 90%;
         
             width: 80%;
           font-size: 75%;
             
     }
+     #middle{
+         width: 80%;
+          font-size: 75%;
+    }
     }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    #middle{
+    #middletwo{
            
+         height: 90%;
             width: 80%;
           font-size: 75%;
             
+    }
+     #middle{
+         width: 80%;
+          font-size: 75%;
     }
     }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    #middle{
-          
+    #middletwo{
+           height: 90%;
             width: 80%;
           font-size: 75%;
             
+    }
+     #middle{
+         width: 80%;
+          font-size: 75%;
     }
     }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    #middle{
-         
+    #middletwo{
+          height: 90%;
             width: 80%;
           font-size: 75%;
             
+    }
+     #middle{
+         width: 80%;
+          font-size: 75%;
     }
     }
 
@@ -221,4 +246,12 @@ dd {
     margin-top: 15px;
     font-weight: 400;
      font-family: 'Open Sans', sans-serif;
+}
+
+#middletwo {
+       position: absolute;
+    top: 50%;
+    left: 50%;
+     z-index: 100;
+    transform: translate(-50%,-50%);
 }
