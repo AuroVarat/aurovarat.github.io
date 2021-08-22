@@ -1,1 +1,0 @@
-# aurovarat.github.io
