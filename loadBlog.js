@@ -1,7 +1,7 @@
 const path = require("path")
 const fs = require("fs")
 
-const dirPath = path.join(__dirname, "../src/markdown")
+const dirPath = path.join(__dirname, "../src/posts")
 
 let postlist = []
 
