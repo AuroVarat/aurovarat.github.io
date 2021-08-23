@@ -1,3 +1,8 @@
+---
+title: My Second Post, Yo!
+author: Dave Jones
+date: December 11, 2019
+---
 <b>Lorem ipsum dolor sit amet, consectetur adipisci_ng elit. Ut lacus velit, finibus in vestibulum in, interdum et dui. Mauris hendrerit leo eget mi condimentum, eu gravida augue fringilla. Sed fringilla purus eget nisl facilisis, et venenatis enim ornare. Mauris sed semper sem, ut sodales ligula. Mauris aliquet pulvinar tortor ut convallis. Aliquam egestas risus at mi iaculis, sit amet euismod diam tempus. Sed lacinia lacinia egestas. In ac dictum mauris. Aenean bibendum pellentesque ligula. Maecenas eget molestie sem, nec hendrerit enim. Cras mattis malesuada porta. Pellentesque a lorem sed augue fringilla ullamcorper in at ligula. Praesent consectetur condimentum felis, ut ultricies nunc dignissim sit amet.</b>  
 <br>
 
