@@ -57,10 +57,10 @@ description: "How a grave in Edinburgh connects two Charles Darwins, two Andrew 
 # Charles Darwin should not be here. 
 
 <img
-  src="images/charles-darwin-grave-edinburgh.jpg"
+  src="/images/charles-darwin-grave-edinburgh.jpg"
   alt="Charles Darwin's grave in Buccleuch Churchyard, Edinburgh. The grave is marked with a simple headstone that reads 'Charles Darwin, 1758-1778'."
   title="Charles Darwin's grave in Buccleuch Churchyard, Edinburgh"
-
+  data-variant="flat"
 />
 
 There is a graveyard just next to the University of Edinburgh library called Buccleuch Churchyard. If you are a student here, you have probably walked along its wall hundreds of times. If you actually walk through the overgrown grass, and possibly past a few needles, you might do a double take at one particular grave: Charles Darwin. Except, of course, _that_ Charles Darwin is buried in Westminster Abbey, next to Isaac Newton. This is another Charles Darwin.
