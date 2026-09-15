@@ -66,19 +66,19 @@ There is a graveyard just next to the University of Edinburgh library called Buc
 
 He was the naturalist's uncle and namesake, born in 1758, and was apparently a remarkably promising medical student at Edinburgh. At only 19, he won the Aesculapian Society's first gold medal for experimental work showing how to chemically distinguish pus from mucus. A few months later, he died following a wound he received while dissecting the brain of a child who had died of hydrocephalus. His father, Erasmus Darwin, later published his work posthumously.
 
-When I was looking at the grave, I noticed something else written near the bottom: Charles had been buried in **Dr A. Duncan's family vault, "by favour."** I had no idea who Dr Duncan was, which sent me down a bit of a rabbit hole.
+When I was looking at the grave, I noticed something else written near the bottom: Charles had been buried in **Dr A. Duncan's family vault, “by favour.”** I had no idea who Dr Duncan was, which sent me down a bit of a rabbit hole.
 
 It turns out that while studying in Edinburgh, Charles lived in the house of Dr Andrew Duncan, an Edinburgh physician who became his teacher and mentor. The two seem to have been particularly close, which explains why Duncan allowed Charles to be buried in his own family vault.
 
-Almost 50 years later, Charles Darwin's nephew and namesake also came to Edinburgh to study medicine. And remarkably, Andrew Duncan was still alive. Darwin later wrote that Duncan spoke about his uncle "with the warmest affection", 47 years after his death. Darwin also tells us that Duncan had cut a lock of hair from his uncle's body and taken it to a jeweller to have it made into a memorial. (The apprentice who made it was apparently a young Henry Raeburn, who would later become one of Scotland's most famous portrait painters.)
+Almost 50 years later, Charles Darwin's nephew and namesake also came to Edinburgh to study medicine. And remarkably, Andrew Duncan was still alive. Darwin later wrote that Duncan spoke about his uncle “with the warmest affection”, 47 years after his death. Darwin also tells us that Duncan had cut a lock of hair from his uncle's body and taken it to a jeweller to have it made into a memorial. (The apprentice who made it was apparently a young Henry Raeburn, who would later become one of Scotland's most famous portrait painters.)
 
-There is also another Andrew Duncan in this story, because apparently everyone had the same name. Duncan's son, also Andrew Duncan, was Professor of Materia Medica at Edinburgh and taught the younger Charles Darwin. Darwin was considerably less fond of the son as a teacher. Years later, he wrote to J. D. Hooker: _"I shall ever hate the name of Materia Medica, since hearing Duncan's lectures at 8 o'clock in a winter's morning—a whole, cold, breakfastless hour on the properties of rhubarb!"_
+There is also another Andrew Duncan in this story, because apparently everyone had the same name. Duncan's son, also Andrew Duncan, was Professor of Materia Medica at Edinburgh and taught the younger Charles Darwin. Darwin was considerably less fond of the son as a teacher. Years later, he wrote to J. D. Hooker: _“I shall ever hate the name of Materia Medica, since hearing Duncan's lectures at 8 o'clock in a winter's morning—a whole, cold, breakfastless hour on the properties of rhubarb!”_
 
 <p id="john-edmonstone">But while looking into the Duncans, I came across another person connected to this story who I knew very little about: <strong>John Edmonstone</strong>.</p>
 
 John was born into slavery in Demerara, in present-day Guyana, on a plantation owned by the Scottish Edmonstone family. In 1817, John travelled to Britain with Charles Edmonstone. Slavery was not legally enforceable in Scotland, meaning John could live here as a free man. At some point, and frustratingly I cannot find exactly how this happened, he became a servant in Andrew Duncan Sr.'s household.
 
-But by 1822 he had established himself independently in Edinburgh. The Post Office Directory simply lists: **"John Edmonston, bird-stuffer, 37 Lothian Street."** While still in Demerara, he had become skilled at preparing and preserving bird specimens.
+But by 1822 he had established himself independently in Edinburgh. The Post Office Directory simply lists: **“John Edmonston, bird-stuffer, 37 Lothian Street.”** While still in Demerara, he had become skilled at preparing and preserving bird specimens.
 
 He wasn't just selling stuffed birds either. Records from the University of Edinburgh's Natural History Museum contain more than 40 references to Edmonstone between 1822 and 1824. He was working independently as a taxidermist and being contracted by the museum to prepare specimens for its collection.
 
@@ -86,9 +86,9 @@ Then a few years later, the younger Charles Darwin moved into **11 Lothian Stree
 
 Darwin heard about Edmonstone and decided to take lessons from him. In a letter to his sister in 1826 he wrote, using the language of his time:
 
-_"I am going to learn to stuff birds, from a blackamoor I believe an old servant of Dr Duncan: it has the recommendation of cheapness, if it has nothing else, as he only charges one guinea, for an hour every day for two months."_
+_“I am going to learn to stuff birds, from a blackamoor I believe an old servant of Dr Duncan: it has the recommendation of cheapness, if it has nothing else, as he only charges one guinea, for an hour every day for two months.”_
 
-So Darwin spent the next two months learning taxidermy from him. Much later, his recollection of Edmonstone was considerably warmer. He remembered that Edmonstone made his living stuffing birds, "which he did excellently", and that he often sat with him because he was "a very pleasant and intelligent man."
+So Darwin spent the next two months learning taxidermy from him. Much later, his recollection of Edmonstone was considerably warmer. He remembered that Edmonstone made his living stuffing birds, “which he did excellently”, and that he often sat with him because he was “a very pleasant and intelligent man.”
 
 And this wasn't just an odd hobby Darwin picked up while avoiding his medical lectures. Five years later he left on HMS _Beagle_, where collecting and preserving specimens became a major part of his work.
 
