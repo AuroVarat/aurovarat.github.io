@@ -89,7 +89,7 @@ Darwin heard about Edmonstone and decided to take lessons from him. In a letter 
 
 _“I am going to learn to stuff birds, from a blackamoor I believe an old servant of Dr Duncan: it has the recommendation of cheapness, if it has nothing else, as he only charges one guinea, for an hour every day for two months.”_
 
-So Darwin spent the next two months learning taxidermy from him. Much later, his recollection of Edmonstone was considerably warmer. He remembered that Edmonstone made his living stuffing birds, “which he did excellently”, and that he often sat with him because he was “a very pleasant and intelligent man.”
+So Darwin spent the next two months learning taxidermy from him. 
 
 And this wasn't just an odd hobby Darwin picked up while avoiding his medical lectures. Five years later he left on HMS _Beagle_, where collecting and preserving specimens became a major part of his work.
 
