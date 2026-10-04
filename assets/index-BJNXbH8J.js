@@ -104,7 +104,8 @@ One of my favourite things about Edinburgh is how much history is just sitting q
 title: "The Double Helix was a mess."
 date: "2026-10-04"
 description: "How a long-standing problem with the double helix model was solved by a serendipitous discovery of an enzyme that could break and rejoin DNA strands."
-draft: "false"
+draft: true
+draft-online: true
 ---
 
 # The Double Helix was a mess.
