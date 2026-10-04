@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positive and Negative Supercoiling</title>
+  <link rel="stylesheet" href="./dna-illustrations.css">
+  <style>
+    .widget {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      border-block: 1px solid var(--border-current);
+      background: var(--paper-current);
+    }
+
+    .tabs {
+      display: flex;
+      gap: 20px;
+      border-bottom: 1px solid var(--border-current);
+    }
+
+    .tab {
+      border: 0;
+      border-bottom: 2px solid transparent;
+      background: transparent;
+      color: var(--ink-300-current);
+      cursor: pointer;
+      font: inherit;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.35;
+      padding: 13px 0 11px;
+      text-align: left;
+    }
+
+    .tab[aria-selected="true"] {
+      border-bottom-color: var(--accent-current);
+      color: var(--accent-current);
+    }
+
+    .tab:hover { color: var(--accent-current); }
+
+    .stage {
+      position: relative;
+      display: grid;
+      place-items: center;
+      background: #ffffff;
+    }
+
+    video {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #ffffff;
+    }
+
+    .video-label {
+      position: absolute;
+      left: 50%;
+      bottom: 1rem;
+      max-width: calc(100% - 2rem);
+      padding: 0.4rem 0.7rem;
+      border: 1px solid var(--border-current);
+      border-radius: 2px;
+      background: var(--paper-current);
+      color: var(--ink-500-current);
+      font-size: 15px;
+      line-height: 1.3;
+      opacity: 0;
+      pointer-events: none;
+      text-align: center;
+      transform: translateX(-50%);
+    }
+
+    .video-label.is-visible { opacity: 1; }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      width: 100%;
+      padding: 14px 0;
+      border-top: 1px solid var(--border-current);
+      background: var(--paper-current);
+    }
+
+    .button-group { display: flex; align-items: center; gap: 8px; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--accent-current);
+      border-radius: 2px;
+      background: var(--accent-current);
+      color: var(--paper-current);
+      cursor: pointer;
+    }
+
+    .btn:hover { color: var(--paper-current); opacity: .85; }
+    .btn.secondary { border-color: var(--border-current); background: transparent; color: var(--ink-300-current); }
+    .btn.secondary:hover { color: var(--accent-current); border-color: var(--accent-current); }
+    .btn svg[hidden] { display: none; }
+
+    .slider {
+      flex: 1;
+      min-width: 0;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    input[type="range"] { position: relative; z-index: 2; margin: 0; }
+
+    .markers {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      z-index: 3;
+      height: 20px;
+      pointer-events: none;
+      transform: translateY(-50%);
+    }
+
+    .marker {
+      position: absolute;
+      top: 50%;
+      width: 3px;
+      height: 16px;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: var(--ink-300-current);
+      box-shadow: 0 0 0 2px var(--paper-current);
+      cursor: pointer;
+      pointer-events: auto;
+      transform: translate(-50%, -50%);
+    }
+
+    .marker:hover, .marker:focus-visible { background: var(--accent-current); }
+    .time { min-width: 2.5rem; color: var(--ink-300-current); font-size: 14px; font-variant-numeric: tabular-nums; text-align: right; }
+
+    @media (max-width: 420px) {
+      .tabs { gap: 16px; }
+      .tab { font-size: 15px; }
+      .controls { gap: 10px; }
+      .button-group { gap: 6px; }
+      .video-label { bottom: .75rem; font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="widget">
+    <div class="tabs" role="tablist" aria-label="Supercoiling examples">
+      <button class="tab" type="button" role="tab" aria-selected="true" data-src="/images/positive-supercoiling.mp4" data-kind="positive">
+        Positive supercoiling
+      </button>
+      <button class="tab" type="button" role="tab" aria-selected="false" data-src="/images/negative-supercoiling.mp4" data-kind="negative">
+        Negative supercoiling
+      </button>
+    </div>
+
+    <div class="stage">
+      <video id="video" src="/images/positive-supercoiling.mp4" playsinline muted loop></video>
+      <div class="video-label" id="videoLabel" aria-live="polite"></div>
+    </div>
+
+    <div class="controls">
+      <div class="button-group">
+        <button class="btn" id="playPause" type="button" title="Play or pause" aria-label="Play or pause">
+          <svg id="playIcon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <svg id="pauseIcon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" hidden>
+            <rect x="6" y="4" width="4" height="16"></rect>
+            <rect x="14" y="4" width="4" height="16"></rect>
+          </svg>
+        </button>
+        <button class="btn secondary" id="reset" type="button" title="Reset" aria-label="Reset">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 12a9 9 0 1 0 3-6.7"></path>
+            <path d="M3 4v6h6"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="slider">
+        <div class="markers" id="markers"></div>
+        <input id="scrubber" type="range" min="0" max="1000" value="0" aria-label="Video position">
+      </div>
+      <div class="time" id="time">0:00</div>
+    </div>
+  </div>
+
+  <script type="module" src="./essay-embed.js"></script>
+  <script>
+    const video = document.getElementById('video');
+    const playPause = document.getElementById('playPause');
+    const reset = document.getElementById('reset');
+    const scrubber = document.getElementById('scrubber');
+    const time = document.getElementById('time');
+    const playIcon = document.getElementById('playIcon');
+    const pauseIcon = document.getElementById('pauseIcon');
+    const markers = document.getElementById('markers');
+    const videoLabel = document.getElementById('videoLabel');
+    const tabs = Array.from(document.querySelectorAll('.tab'));
+    const timelineLabels = {
+      positive: [
+        { start: 4, end: 15, label: 'Adding twists' },
+        { start: 16, end: 17, label: 'Bringing them together' },
+        { start: 18, end: 28, label: 'Supercoil forms' },
+      ],
+      negative: [
+        { start: 0, end: 11, label: 'Untwisting' },
+        { start: 11, end: 12, label: 'Supercoiling forms' },
+        { start: 27, end: 30, label: 'More untwisting' },
+        { start: 34, end: 37, label: 'Supercoiling forms' },
+      ],
+    };
+    const markerTimes = {
+      positive: [4, 16, 18],
+      negative: [0, 11, 27, 34],
+    };
+    const clipDurations = {
+      positive: 28,
+      negative: 40,
+    };
+    let activeKind = 'positive';
+
+    const formatTime = (seconds) => {
+      const safeSeconds = Number.isFinite(seconds) ? seconds : 0;
+      const minutes = Math.floor(safeSeconds / 60);
+      const remainingSeconds = Math.floor(safeSeconds % 60).toString().padStart(2, '0');
+      return `${minutes}:${remainingSeconds}`;
+    };
+
+    const updatePlaybackButton = () => {
+      const isPaused = video.paused;
+      playIcon.hidden = !isPaused;
+      pauseIcon.hidden = isPaused;
+      playIcon.style.display = isPaused ? 'block' : 'none';
+      pauseIcon.style.display = isPaused ? 'none' : 'block';
+      playPause.title = isPaused ? 'Play' : 'Pause';
+      playPause.setAttribute('aria-label', isPaused ? 'Play' : 'Pause');
+    };
+
+    const updateVideoLabel = () => {
+      const currentTime = video.currentTime || 0;
+      const activeLabel = timelineLabels[activeKind].find(({ start, end }) => (
+        currentTime >= start && currentTime < end
+      ));
+
+      if (activeLabel) {
+        videoLabel.textContent = activeLabel.label;
+        videoLabel.classList.add('is-visible');
+      } else {
+        videoLabel.textContent = '';
+        videoLabel.classList.remove('is-visible');
+      }
+    };
+
+    const updateControls = () => {
+      const duration = video.duration || 0;
+      scrubber.value = duration ? String((video.currentTime / duration) * 1000) : '0';
+      time.textContent = formatTime(video.currentTime);
+      updatePlaybackButton();
+      updateVideoLabel();
+    };
+
+    const renderMarkers = () => {
+      const duration = clipDurations[activeKind] || video.duration || 0;
+      markers.replaceChildren();
+
+      if (!duration) {
+        return;
+      }
+
+      markerTimes[activeKind].forEach((seconds) => {
+        const marker = document.createElement('button');
+        marker.className = 'marker';
+        marker.type = 'button';
+        marker.style.left = `${Math.min(100, Math.max(0, (seconds / duration) * 100))}%`;
+        marker.title = `Jump to ${formatTime(seconds)}`;
+        marker.setAttribute('aria-label', `Jump to ${formatTime(seconds)}`);
+        marker.addEventListener('click', () => {
+          video.currentTime = seconds;
+          updateControls();
+        });
+        markers.append(marker);
+      });
+    };
+
+    playPause.addEventListener('click', () => {
+      if (video.paused) {
+        video.play().catch(() => {
+          updatePlaybackButton();
+        });
+      } else {
+        video.pause();
+      }
+    });
+
+    reset.addEventListener('click', () => {
+      video.currentTime = 0;
+      updateControls();
+    });
+
+    scrubber.addEventListener('input', () => {
+      const duration = video.duration || 0;
+      video.currentTime = duration * (Number(scrubber.value) / 1000);
+    });
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        tabs.forEach((candidate) => candidate.setAttribute('aria-selected', String(candidate === tab)));
+        activeKind = tab.dataset.kind;
+        video.pause();
+        video.src = tab.dataset.src;
+        video.currentTime = 0;
+        video.load();
+        updateControls();
+        renderMarkers();
+      });
+    });
+
+    video.addEventListener('loadedmetadata', () => {
+      updateControls();
+      renderMarkers();
+    });
+    video.addEventListener('timeupdate', updateControls);
+    video.addEventListener('play', updateControls);
+    video.addEventListener('pause', updateControls);
+  </script>
+</body>
+</html>

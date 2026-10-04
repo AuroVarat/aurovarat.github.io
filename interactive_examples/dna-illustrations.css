@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "IM Fell English";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/imfellenglish/v14/Ktk1ALSLW8zDe0rthJysWrnLsAz3Fw.ttf") format("truetype");
+}
+
+:root {
+  --paper-current: #fef5e5;
+  --ink-500-current: #1a1a1a;
+  --ink-300-current: #555555;
+  --border-current: #e6e2d8;
+  --accent-current: #8b4513;
+  --font-serif-current: "IM Fell English", Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper-current); color: var(--ink-500-current); font-family: var(--font-serif-current); }
+.illustration { padding: 20px 0 16px; border-block: 1px solid var(--border-current); }
+header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 17px; }
+.figure-number { color: var(--accent-current); font-size: 12px; letter-spacing: .09em; text-transform: uppercase; white-space: nowrap; }
+h1 { margin: 0; font-size: 25px; line-height: 1.2; font-weight: 400; }
+.choices { display: flex; flex-wrap: wrap; gap: 6px 20px; border-bottom: 1px solid var(--border-current); }
+button, input { font: inherit; }
+button { color: inherit; cursor: pointer; }
+.choice { padding: 10px 0; border: 0; border-bottom: 2px solid transparent; background: transparent; color: var(--ink-300-current); font-size: 16px; }
+.choice[aria-pressed="true"] { border-bottom-color: var(--accent-current); color: var(--accent-current); }
+button:hover { color: var(--accent-current); }
+button:focus-visible, input:focus-visible { outline: 2px solid var(--accent-current); outline-offset: 4px; }
+.explanation { font-size: 17px; line-height: 1.45; margin: 16px 0 0; min-height: 50px; }
+.drawing { display: block; width: 100%; overflow: visible; }
+.cord-drawing { height: 286px; }
+.drawing text { fill: var(--ink-300-current); font-family: var(--font-serif-current); font-size: 15px; }
+.drawing .annotation { fill: var(--accent-current); font-size: 16px; }
+.drawing .guide { fill: none; stroke: var(--border-current); stroke-width: 1; }
+.drawing .arrow { fill: none; stroke: var(--accent-current); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.drawing .clamp { fill: none; stroke: var(--ink-300-current); stroke-width: 1.5; }
+.legend { display: flex; justify-content: center; gap: 24px; color: var(--ink-300-current); font-size: 13px; margin-top: -6px; }
+.legend span::before { content: ''; display: inline-block; vertical-align: middle; width: 22px; border-top: 3px solid var(--accent-current); margin-right: 7px; }
+.legend span + span::before { border-color: var(--ink-500-current); }
+.observation { border-left: 2px solid var(--accent-current); padding: 0 0 0 13px; margin: 18px 0; font-size: 17px; line-height: 1.45; min-height: 50px; }
+.observation strong { font-weight: 400; color: var(--accent-current); }
+.controls { display: grid; grid-template-columns: auto auto 1fr; align-items: center; gap: 14px; }
+.play, .reset { min-height: 42px; border: 1px solid var(--border-current); border-radius: 2px; padding: 8px 13px; background: transparent; font-size: 15px; }
+.play { min-width: 79px; background: var(--accent-current); border-color: var(--accent-current); color: var(--paper-current); }
+.play:hover { color: var(--paper-current); opacity: .85; }
+.reset { border-color: transparent; padding-inline: 0; }
+.scrubber { display: flex; flex-direction: column; gap: 5px; }
+.scrubber label { color: var(--ink-300-current); font-size: 13px; }
+input[type="range"] { width: 100%; margin: 0; accent-color: var(--accent-current); cursor: pointer; height: 24px; }
+.note { margin: 16px 0 0; font-size: 13px; line-height: 1.4; color: var(--ink-300-current); }
+.note a { color: inherit; text-underline-offset: 3px; text-decoration-color: var(--border-current); }
+@media (max-width: 420px) {
+  header { gap: 10px; }
+  h1 { font-size: 22px; }
+  .choices { gap: 4px 15px; }
+  .choice { font-size: 15px; }
+  .explanation, .observation { font-size: 16px; min-height: 70px; }
+  .controls { gap: 12px; }
+  .play { padding-inline: 9px; min-width: 72px; }
+  .drawing { width: 100%; }
+}

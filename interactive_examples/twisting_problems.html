@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Where do the twists go?</title>
+  <link rel="stylesheet" href="./dna-illustrations.css">
+</head>
+<body>
+  <main class="illustration">
+    <header><span class="figure-number">Fig. 01</span><h1>Where do the twists go?</h1></header>
+    <div class="choices" role="group" aria-label="Ways of separating DNA">
+      <button class="choice" aria-pressed="true" data-mode="pull">1. Pull</button>
+      <button class="choice" aria-pressed="false" data-mode="rotate">2. Unwind</button>
+      <button class="choice" aria-pressed="false" data-mode="bubble">3. Open the middle</button>
+    </div>
+    <p class="explanation" id="explanation">Pull opposite ends. Sections near the ends straighten and open, while the remaining winding gathers between them.</p>
+    <canvas class="drawing cord-drawing" id="drawing" role="img" aria-label="Two intertwined cords; pulling opens the end sections and tightens the middle.">
+      Two intertwined cords. Use the play button or slider to explore how pulling, rotation and opening the middle affect their winding.
+    </canvas>
+    <div class="legend" aria-hidden="true"><span>One strand</span><span>The other strand</span></div>
+    <p class="observation" id="observation" aria-live="polite"></p>
+    <div class="controls">
+      <button class="play" id="play" aria-label="Play animation">▶ Play</button>
+      <button class="reset" id="reset">Reset</button>
+      <div class="scrubber"><label for="progress" id="progress-label">Pull the ends apart</label><input id="progress" type="range" min="0" max="1000" value="0" aria-describedby="observation"></div>
+    </div>
+    <p class="note">A 3D cord analogy with fixed strand length, not a molecular simulation. Four turns stand in for a much longer molecule. End rotation is allowed only in the unwinding example. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2643378/" target="_blank" rel="noreferrer">About DNA topology ↗</a></p>
+  </main>
+  <script type="module" src="./twisting-problems.js"></script>
+</body>
+</html>
